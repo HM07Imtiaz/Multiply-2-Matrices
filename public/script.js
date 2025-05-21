@@ -13,6 +13,7 @@ document.getElementById('multiplyBtn').addEventListener('click', async () => {
       resultArea.textContent = `Result:\n${JSON.stringify(data.result, null, 2)}`;
     }
   } catch (err) {
+    console.error('Fetch error:', err);
     resultArea.textContent = 'Error communicating with the server.';
   }
 });
