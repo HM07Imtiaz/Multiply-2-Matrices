@@ -4,7 +4,7 @@ document.getElementById('multiplyBtn').addEventListener('click', async () => {
   const resultArea = document.getElementById('resultArea');
 
   try {
-    const response = await fetch(`/api/multiply?A=${encodeURIComponent(matrixA)}&B=${encodeURIComponent(matrixB)}`);
+    const response = await fetch(`../api/Multiply?A=${encodeURIComponent(matrixA)}&B=${encodeURIComponent(matrixB)}`);
     const data = await response.json();
 
     if (data.error) {
